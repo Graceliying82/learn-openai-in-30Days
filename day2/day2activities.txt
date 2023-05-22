@@ -1,0 +1,17 @@
+
+##### Signed Up an online course at Udemy #######
+In order to make my learning systematically, I signed up an online course at Udemy which is called OpenAI Python API Bootcamp.
+
+
+##### Setup Python dotenv to store API-KEYS #######
+https://pypi.org/project/python-dotenv/
+
+pip install python-dotenv
+
+import os
+from dotenv import load_dotenv
+load_dotenv()
+openAI_api_key = os.getenv("OPENAI_API_KEY")
+
+This is a way you can store your API-KEYs
+

@@ -1,0 +1,113 @@
+
+##### Install Python #######
+https://www.python.org/downloads/
+
+
+
+##### Install pip for python3 #######
+https://docs.python.org/3/installing/index.html
+
+
+
+##### Install langchain and openAI #######
+https://python.langchain.com/en/latest/getting_started/getting_started.html
+My first langchain project follows this tutorial.
+I need to create a OpenAI account and I need to generate an API key from here:
+https://platform.openai.com/account/api-keys
+You need to set up a billing method in order to make any api call.
+
+
+
+##### Install Jupyter notebook#######
+https://jupyter.org/install
+jupyter notebook
+
+
+
+
+####### Remot git repo authentication #######
+  The User ID and password authentication is not supported by Github anymore. I followed the following steps to make the local repo synced with the remote:
+  1. Generate a new repo at github.com
+  2. Locally, in the local folder, do:
+        > git init
+        > git add .
+        > git commit -m "Initial commit"
+        > git branch -M main
+        > git remote add origin https://github.com/your-username/your-repository.git
+        > git push -u origin main
+  3. When you do the git push, you will hit the error as below:
+        remote: Support for password authentication was removed on August 13, 2021.
+        remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with- https-urls for information on currently recommended modes of authentication.
+        fatal: Authentication failed for 'https://github.com/Graceliying82/Learn-OpenAI-In-90Days.git/'
+  4. To Solve this, you can do to following:
+        > go to your github click your profile icon at the top right corner. (which has your photo there)
+        > select "settings" -> "Developer settings". 
+        > select "personal access tokens" to generate a token. (I used the classical one)
+        > save the token and try 'git push -u origin main'. When you put your username and the token as password there, you are good to go.
+ If you still don't know what to do, you can watch this video. https://youtu.be/uRNIc5AILlI
+
+
+##### install google-search-results ######
+pip install google-search-results
+
+
+##### What SERPAPI key ######
+The SERPAPI key, or SERPAPI_API_KEY, is an API key provided by SERPAPI (Search Engine Results Page API) service. SERPAPI is a tool that allows developers to retrieve search engine results programmatically, enabling them to extract data from search engine result pages (SERPs) easily.
+
+The API key is a unique identifier that is used to authenticate your requests to the SERPAPI service. It acts as a security measure to ensure that only authorized users can access the API and retrieve search results.
+
+When making API calls to SERPAPI, you need to include your API key in the request headers or as a parameter to authenticate and authorize your requests. This key helps track your API usage and ensures that you have the necessary permissions to access the service.
+
+Remember to keep your SERPAPI key confidential and avoid sharing it publicly or committing it to public repositories, as it grants access to your SERPAPI account and its associated resources.
+
+
+ ##### install SERPAPI key ######
+To get the SERPAPI_API_KEY, you need to follow these steps:
+
+1. Go to the SERPAPI website: Visit the SERPAPI website at https://serpapi.com/.
+
+2. Sign up: Click on the "Get Started for Free" button or the "Sign Up" link to create a new account.
+
+3. Provide your email: Enter your email address and click on "Get Started" or "Sign Up".
+
+4. Verify your email: Check your email inbox for a verification email from SERPAPI. Follow the instructions in the email to verify your account.
+
+5. Log in: Once your account is verified, log in to the SERPAPI website using your email and password.
+
+6. Access API Keys: After logging in, you will be redirected to the SERPAPI dashboard. In the left navigation menu, click on "API Keys".
+
+7. Generate an API Key: On the API Keys page, click on the "Create New API Key" button.
+
+8. Configure your API Key: Give your API key a name (for identification purposes) and configure any desired settings, such as selecting the search engine or location for your API calls.
+
+9. Generate the API Key: Click on the "Create" or "Generate" button to create your API key.
+
+10. Get the API Key: Once the API key is generated, you will see it displayed on the API Keys page. Copy the API key and keep it secure.
+
+The SERPAPI_API_KEY is the key you just generated in the above steps. It is used to authenticate your requests when making API calls to the SERPAPI service. Make sure to keep your API key confidential and avoid sharing it publicly.
+
+
+
+
+
+User
+what is serpapi key
+
+ChatGPT
+The SERPAPI key, or SERPAPI_API_KEY, is an API key provided by SERPAPI (Search Engine Results Page API) service. SERPAPI is a tool that allows developers to retrieve search engine results programmatically, enabling them to extract data from search engine result pages (SERPs) easily.
+
+The API key is a unique identifier that is used to authenticate your requests to the SERPAPI service. It acts as a security measure to ensure that only authorized users can access the API and retrieve search results.
+
+When making API calls to SERPAPI, you need to include your API key in the request headers or as a parameter to authenticate and authorize your requests. This key helps track your API usage and ensures that you have the necessary permissions to access the service.
+
+Remember to keep your SERPAPI key confidential and avoid sharing it publicly or committing it to public repositories, as it grants access to your SERPAPI account and its associated resources.
+ 
+ 
+ ##### Useful tutorials ######
+https://www.youtube.com/watch?v=kYRB-vJFy38
+There many great videos on this channel.
+
+
+
+
+        
