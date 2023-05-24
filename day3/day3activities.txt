@@ -1,0 +1,9 @@
+##### Project #1: Work on Natural Language to SQL #######
+In this project we will build out a simple proof of concept allow a non-technical person to directly interact with a database and retrieve inforamtion without knowing SQL
+NPL --> SQL
+
+##### Tabular Data Set-up #######
+
+
+##### Read documents for Pandas #######
+https://pandas.pydata.org/

@@ -8,10 +8,11 @@ https://pypi.org/project/python-dotenv/
 
 pip install python-dotenv
 
-import os
-from dotenv import load_dotenv
-load_dotenv()
-openAI_api_key = os.getenv("OPENAI_API_KEY")
-
 This is a way you can store your API-KEYs
+Refer to getAPIKeyWithDotenv.py for more detail
 
+
+##### Under Stand OpenAI Pricing #######
+https://openai.com/pricing
+
+update:"text-davinci-003" is replacing ''code-davinci-002"

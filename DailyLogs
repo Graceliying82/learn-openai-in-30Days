@@ -1,3 +1,9 @@
 Day1:
     1. Environment Steps. Installed Python, pip, LangChain, openAI, Jupyter note book.
     2. Run FirstLangchain.ipynb in Jupyter note book.
+Day2:
+    1. Created Git repository learn-openai-in-30days.
+    2. Setup the .env for required API-KEYS.
+    3. Understand GPT pricing for different models.
+Day3:
+    1. Working on NPL to SQL project.

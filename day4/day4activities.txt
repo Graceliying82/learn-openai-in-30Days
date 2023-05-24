@@ -1,0 +1,19 @@
+###### Reverse Prompt #######
+Know a little about reverse prompt: https://www.latent.space/p/reverse-prompt-eng
+Prompt takeover:are embarrassing, but as long as the output is solely contained in response to the prompter (i.e. not published without context or informing future output to the general public), the damage is mainly reputational. You pretty much have to be actively prompting for problematic content to get back problematic content, which arguably is AI alignment working in our favor.
+Prompt leaks: are much less common, and on the surface more concerning. Here the concern is intellectual property - the proprietary prompt prefix that differentiates the products of separate companies (like Jasper vs CopyAI) building atop the same foundation model (like GPT3). We have some idea of how to make leaking prompts much harder (basically escaping or quarantining injected text similar to how we handle SQL injection), but it is true that there are no 100% leakproof methods3.
+
+###### Prompt Design #######
+Model Choice:
+    - Always choose the latest models
+Instructions:
+    - Put instructions at the beginning of a prompt and use ### or """ to separate out instructions from desired output
+Details:
+    - provide enough detail for the model to understand the output format
+Examples:
+    - give an Example for output
+Be Direct:
+    - more direct you can be the better
+Initiate the response:
+    - this is very useful for code completion models
+https://platform.openai.com/docs/guides/completion/prompt-design
