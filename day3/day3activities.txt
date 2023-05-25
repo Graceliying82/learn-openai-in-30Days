@@ -7,3 +7,10 @@ NPL --> SQL
 
 ##### Read documents for Pandas #######
 https://pandas.pydata.org/
+
+##### Some knowledges #######
+Temperature/Max Tokens/Top P/N/Frequency Penalty(-2, 2)/Presence Penalty
+https://platform.openai.com/docs/api-reference/parameter-details
+
+###### Play Ground #######
+https://platform.openai.com/playground
