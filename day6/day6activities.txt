@@ -1,0 +1,51 @@
+###### openAI api node.js project #######
+https://platform.openai.com/docs/quickstart/build-your-application
+This is very simple example of a node.js project.
+The key function about how to call completion API is as below:
+**************************************************************
+import { Configuration, OpenAIApi } from "openai";
+
+const configuration = new Configuration({
+  apiKey: process.env.OPENAI_API_KEY,
+});
+const openai = new OpenAIApi(configuration);
+......
+const completion = await openai.createCompletion({
+      model: "text-davinci-003",   // Model
+      prompt: generatePrompt(animal), // Prompt
+      temperature: 0.6, // Temperature
+    });
+    res.status(200).json({ result: completion.data.choices[0].text });
+
+**************************************************************
+
+Need to add OPENAI_API_KEY to .env
+
+The full git repo is: https://github.com/openai/openai-quickstart-node.git
+
+###### supported libraries #######
+https://platform.openai.com/docs/libraries
+
+###### Model endpoint compatibility #######
+ENDPOINT	MODEL NAME
+/v1/chat/completions	gpt-4, gpt-4-0314, gpt-4-32k, gpt-4-32k-0314, gpt-3.5-turbo, gpt-3.5-turbo-0301
+/v1/completions	text-davinci-003, text-davinci-002, text-curie-001, text-babbage-001, text-ada-001
+/v1/edits	text-davinci-edit-001, code-davinci-edit-001
+/v1/audio/transcriptions	whisper-1
+/v1/audio/translations	whisper-1
+/v1/fine-tunes	davinci, curie, babbage, ada
+/v1/embeddings	text-embedding-ada-002, text-search-ada-doc-001
+/v1/moderations	text-moderation-stable, text-moderation-latest
+
+
+###### Text completion #######
+some best practice:
+Use max_tokens > 256
+Prefer finish_reason == "stop"
+Resample 3-5 times
+Try giving more clues.
+Note: if all the returned samples have finish_reason == "length", 
+it's likely that max_tokens is too small and model runs out of tokens before it manages to connect the prompt and the suffix naturally. 
+Consider increasing max_tokens before resampling.
+
+###### Chat completion #######
