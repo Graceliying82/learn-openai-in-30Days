@@ -14,5 +14,6 @@ Day5:
     1. Automation Recipe and Dish Image Creator (DALLE-2)
     2. Regular expression operations: https://docs.python.org/3/library/re.html
 Day6:
-    Will read openai api documents today. 
+    1. Will read openai api documents today. 
     https://platform.openai.com/docs/introduction
+    2. Will try some code to play with chat completion

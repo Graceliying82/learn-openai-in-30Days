@@ -49,3 +49,85 @@ it's likely that max_tokens is too small and model runs out of tokens before it 
 Consider increasing max_tokens before resampling.
 
 ###### Chat completion #######
+Because gpt-3.5-turbo performs at a similar capability to text-davinci-003 but at 10% the price per token, we recommend gpt-3.5-turbo for most use cases.
+
+example:
+# Note: you need to be using OpenAI Python v0.27.0 for the code below to work
+import openai
+
+openai.ChatCompletion.create(
+  model="gpt-3.5-turbo",
+  messages=[
+        {"role": "system", "content": "You are a helpful assistant."},
+        {"role": "user", "content": "Who won the world series in 2020?"},
+        {"role": "assistant", "content": "The Los Angeles Dodgers won the World Series in 2020."},
+        {"role": "user", "content": "Where was it played?"}
+    ]
+)
+**** Important:
+The main input is the messages parameter. 
+Messages must be an array of message objects, where each object has a role (either "system", "user", or "assistant") 
+and content (the content of the message). 
+Conversations can be as short as 1 message or fill many pages.
+
+respone example:
+{
+ 'id': 'chatcmpl-6p9XYPYSTTRi0xEviKjjilqrWU2Ve',
+ 'object': 'chat.completion',
+ 'created': 1677649420,
+ 'model': 'gpt-3.5-turbo',
+ 'usage': {'prompt_tokens': 56, 'completion_tokens': 31, 'total_tokens': 87},
+ 'choices': [
+   {
+    'message': {
+      'role': 'assistant',
+      'content': 'The 2020 World Series was played in Arlington, Texas at the Globe Life Field, which was the new home stadium for the Texas Rangers.'},
+    'finish_reason': 'stop',
+    'index': 0
+   }
+  ]
+}
+
+In Python, the assistant’s reply can be extracted with response['choices'][0]['message']['content'].
+
+Every response will include a finish_reason. The possible values for finish_reason are:
+
+stop: API returned complete model output
+length: Incomplete model output due to max_tokens parameter or token limit
+content_filter: Omitted content due to a flag from our content filters
+null: API response still in progress or incomplete
+
+
+###### Image Generating #######
+Example code:
+response = openai.Image.create(
+  prompt="a white siamese cat",
+  n=1,
+  size="1024x1024"
+)
+image_url = response['data'][0]['url']
+You can also refer to my exericise at day 5.
+
+
+###### Image Edit #######
+The image edits endpoint allows you to edit and extend an image by uploading a mask. 
+The transparent areas of the mask indicate where the image should be edited, and the prompt should describe the full new image, not just the erased area. 
+This endpoint can enable experiences like the editor in our DALL·E preview app.
+Example code:
+response = openai.Image.create_edit(
+  image=open("sunlit_lounge.png", "rb"),
+  mask=open("mask.png", "rb"),
+  prompt="A sunlit indoor lounge area with a pool containing a flamingo",
+  n=1,
+  size="1024x1024"
+)
+image_url = response['data'][0]['url']
+
+###### Image Variations #######
+The image variations endpoint allows you to generate a variation of a given image.
+response = openai.Image.create_variation(
+  image=open("corgi_and_cat_paw.png", "rb"),
+  n=1,
+  size="1024x1024"
+)
+image_url = response['data'][0]['url']
