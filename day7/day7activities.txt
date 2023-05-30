@@ -1,0 +1,6 @@
+###### setup a github io page for the new project #######
+The repo link: https://github.com/Graceliying82/graceliying82.github.io
+The page link: https://graceliying82.github.io/
+
+###### install gitPython #######
+https://gitpython.readthedocs.io/en/stable/
