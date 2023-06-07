@@ -1,0 +1,8 @@
+Step 1 : Ask Chatgpt to give me a name 
+
+Step 2 : I decide to use my github website recording this. So I ask chatgpt to make a front page for me.
+
+Step 3: I will use Dalle-2 to generate a picture for it.
+
+
+
