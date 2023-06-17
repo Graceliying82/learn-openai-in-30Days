@@ -1,0 +1,9 @@
+I made a PDF_Chat bot following a youtube tutorial.
+
+Youtube demo:
+https://www.youtube.com/watch?v=EynIc0Shgrw&list=PLCdXoF5pKBPXI8VV5VBRwxREmYKWnY6M3
+
+github Link:
+https://github.com/Graceliying82/pdf-chat
+
+

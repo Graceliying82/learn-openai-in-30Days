@@ -52,3 +52,25 @@ exec(code, mod.__dict__)
 mod.hello()
 
 # This is what import a module doing. Define it -> add it to the name space -> compile -> exec
+
+# How to find the home path
+home_path = os.environ['HOME']
+
+# How to find 'module2' which is not in current sys.path
+module2_path = os.path.join(home_path, 'another_path/module2')
+
+# sys.path will not show module2_path
+sys.path
+
+import importlib
+#importlib can't find module2 because it's not in the sys.path
+importlib.util.find_spec('module2')
+
+# in order to import module 2 need to do the following
+sys.path.append(module2_path)
+
+# now you can import module2 by
+# import module2
+
+
+sys.path.append(module2_path)

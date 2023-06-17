@@ -1,0 +1,10 @@
+I started to seeking for real example using openAI and Langchange.
+
+1. I found I need to learn more about python and build up my python programming skills for many ascpects. I signed up for python deep diving courses on udemy. The courses were called Python deep dive part 1 - part 4. The lectures are exemly good. Dr. Fred touched many interesting and
+    deep topics I am curious about. So I am really enjoy watching them.
+2. I found a great full stack LLM Bootcamp and it's free. Plan to spend the following day on that too. 
+    https://fullstackdeeplearning.com/llm-bootcamp/spring-2023/prompt-engineering/
+3. I added a folder called python_cheat_sheets. I will use that to save good code snippet and some notes.
+
+
+
