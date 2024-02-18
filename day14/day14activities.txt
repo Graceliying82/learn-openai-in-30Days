@@ -1,0 +1,15 @@
+I am trying to find a way to make my PDF_Chat using Pinecone database.
+
+1. Watched a video: Pinecone x Hugging Face Workshop: Inference Endpoints
+https://www.youtube.com/watch?v=78VIBB9ZaR0
+
+2. This is the link tell you how to use pinecone with hugging Face
+https://docs.pinecone.io/docs/hugging-face-endpoints
+It will need to use Inference Endpoints which will cost 0.06/hour. I feel it's not what I need for now. But may come back later if I need this service.
+https://huggingface.co/pricing
+
+3. Watch this video and trying to see what I can do to my project. 
+  > Read Langchain Text splitters
+   https://js.langchain.com/docs/modules/indexes/text_splitters/
+
+4. 
