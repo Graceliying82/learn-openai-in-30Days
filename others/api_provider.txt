@@ -1,0 +1,17 @@
+serpapi
+https://serpapi.com/
+SerpApi (Search Engine Results Pages API) is a service that allows developers to retrieve search engine results programmatically.
+It abstracts away the complexity of scraping search engine result pages (SERPs) by providing a simple API interface
+
+
+proxycurl
+https://nubela.co/proxycurl/
+ProxyCrawl is a service that provides web scraping and crawling solutions.
+It offers tools and services to scrape data from websites at scale while handling challenges such as IP blocking, CAPTCHAs, and bot detection.
+ProxyCrawl provides a pool of rotating proxy servers, allowing users to make requests through different IP addresses, which helps to avoid being blocked or detected by websites.
+
+Tavily
+https://app.tavily.com/documentation/python
+
+LangSmith
+https://docs.smith.langchain.com/

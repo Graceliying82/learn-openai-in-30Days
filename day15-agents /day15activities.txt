@@ -1,0 +1,37 @@
+Learning Udemy course:
+Learn LangChain by building FAST a real world generative ai LLM powered application LLM (Python)
+
+1. Learning AgentType:
+    In the LangChain framework, each AgentType is designed for different scenarios. Here's a brief overview:
+
+    ZERO_SHOT_REACT_DESCRIPTION: This is a zero-shot agent that performs a reasoning step before acting. It's suitable for scenarios where an immediate response is required without prior training.
+
+    REACT_DOCSTORE: This is also a zero-shot agent that performs a reasoning step before acting. However, this agent has access to a document store that allows it to look up relevant information to answer the question. It's suitable for scenarios where the answer can be found in a document store.
+
+    SELF_ASK_WITH_SEARCH: This agent breaks down a complex question into a series of simpler questions and uses a search tool to look up answers to the simpler questions in order to answer the original complex question. It's suitable for scenarios where the question is complex and needs to be broken down.
+
+    CONVERSATIONAL_REACT_DESCRIPTION: This agent is designed to hold a conversation in addition to using tools. It has methods for creating prompts, validating tools, and constructing an agent from a language model and tools.
+
+    CHAT_ZERO_SHOT_REACT_DESCRIPTION: This is a zero-shot agent that performs a reasoning step before acting and is designed to be used in conjunction. The context does not provide further information about this agent type.
+
+    CHAT_CONVERSATIONAL_REACT_DESCRIPTION: The context does not provide information about this agent type.
+
+    STRUCTURED_CHAT_ZERO_SHOT_REACT_DESCRIPTION: This is a zero-shot react agent optimized for chat models. This agent is capable of invoking tools that have multiple inputs. It's suitable for chat scenarios where multiple inputs are required.
+
+    OPENAI_FUNCTIONS: This is an agent optimized for using open AI functions. It's suitable for scenarios where open AI functions are required.
+
+    OPENAI_MULTI_FUNCTIONS: The context does not provide information about this agent type.
+
+    For more detailed information about each agent type, please refer to the official documentation at https://python.langchain.com/docs/modules/agents/agent_types/.
+
+2 Setup LangSmith
+    When building with LangChain, all steps will automatically be traced in LangSmith.
+    To set up LangSmith we just need set the following environment variables:
+    export LANGCHAIN_TRACING_V2="true"
+    export LANGCHAIN_API_KEY="<your-api-key>"
+    You will need to setup account and API_KEY to use this function. I choose to skip for now.
+
+3 Following this guid to learn agent:
+    https://python.langchain.com/docs/modules/agents/quick_start
+    Using a search API:Tavily
+    I plan to use this API key to replace
