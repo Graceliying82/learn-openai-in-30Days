@@ -1,0 +1,20 @@
+
+LLM mode:
+The LLM objects take string as input and output string.
+
+ChatModel:
+The ChatModel objects take a list of messages as input and output a message.
+
+https://python.langchain.com/docs/modules/model_io/concepts
+
+LLMs
+LLMs in LangChain refer to pure text completion models. The APIs they wrap take a string prompt as input and output a string completion.
+OpenAI's GPT-3 is implemented as an LLM.
+
+Chat Models
+Chat models are often backed by LLMs but tuned specifically for having conversations.
+Crucially, their provider APIs use a different interface than pure text completion models.
+Instead of a single string, they take a list of chat messages as input and they return an AI message as output.
+See the section below for more details on what exactly a message consists of.
+GPT-4 and Anthropic's Claude-2 are both implemented as chat models.
+

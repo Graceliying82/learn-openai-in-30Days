@@ -1,0 +1,22 @@
+https://python.langchain.com/docs/modules/model_io/output_parsers/
+
+Output Parser Types
+1. OpenAITools
+   https://python.langchain.com/docs/modules/model_io/output_parsers/types/openai_tools
+
+The output of models are either strings or a message. Oftentimes, the string or messages contains information
+formatted in a specific format to be used downstream (e.g. a comma separated list, or JSON blob).
+Output parsers are responsible for taking in the output of a model and transforming it into a more usable form.
+These generally work on the content of the output message, but occasionally work on values in the additional_kwargs field.
+
+StrOutputParser:
+This is a simple output parser that just converts the output of a language model (LLM or ChatModel) into a string
+
+OpenAI Functions Parsers:
+There are a few parsers dedicated to working with OpenAI function calling.
+
+Agent Output Parsers:
+Agents are systems that use language models to determine what steps to take.
+The output of a language model therefore needs to be parsed into some schema that can represent what actions (if any)
+are to be taken. AgentOutputParsers are responsible for taking raw LLM or ChatModel output and converting it to that
+schema. The logic inside these output parsers can differ depending on the model and prompting strategy being used.

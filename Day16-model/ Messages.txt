@@ -1,0 +1,12 @@
+Messages
+
+role: describes WHO is saying the message.
+content: describes the content of the message.
+additional_kwargs: additional information, functional_call
+
+HumanMessage: this represents a message from the user. -- Generally only consists of content
+AIMessage: a message from the model. -- may have additional_kwargs, e.g. functional_call
+SystemMessage: represents a system message. Generally only consists of content. Only some models support this.
+FunctionMessage: represent the result of a function call. -- this massage has a name parameter which is the name of the function.
+ToolMessage: this represents the result of a tool call. -- this message has a tool_call_id parameter which conveys the id of the tool
+
